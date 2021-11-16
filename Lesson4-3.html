@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   
+ // Đếm xem có bao nhiêu sản phẩm sắp hết hàng 
+const productList = [
+    {
+        name: "iphone 7",
+        quantity: 30
+    },
+    {
+        name: "Samsung S10",
+        quantity: 10
+    },
+    {
+        name: "Iphone X",
+        quantity: 5
+    },
+    {
+        name: "Xiaomi Redmi",
+        quantity: 1
+    },
+];
+var arr =[];
+    for(let product of productList){
+        if(product.quantity < 10){
+            arr = product.quantity;
+        }
+        console.log(product.name);
+    };
+    </script>
+</head>
+<body>
+</body>
+</html>
