@@ -7,7 +7,7 @@
     <title>Document</title>
     <script>
    
- // Đếm xem có bao nhiêu sản phẩm sắp hết hàng 
+ // Đưa ra danh sách sản phẩm sắp hết hàng 
 const productList = [
     {
         name: "iphone 7",
@@ -26,13 +26,20 @@ const productList = [
         quantity: 1
     },
 ];
-var arr =[];
-    for(let product of productList){
-        if(product.quantity < 10){
-            arr = product.quantity;
-        }
-        console.log(arr,product.name + "sap het hang");
-    };
+
+for (let product of productList) {
+        if (product.quantity < 10) {
+            console.log(product.name + " sap het hang");
+    }
+}
+// Đếm xem có bao nhiêu sản phẩm sắp hết hàng
+        let count = 0;
+for (let product of productList) {
+        if (product.quantity < 10) {
+            count += 1;
+    }
+}
+console.log(`so san pham het hang la ${count}`);
     </script>
 </head>
 <body>
